@@ -3,9 +3,16 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def moving_zeroes(arr):
-    # Your code here
+    non_zeros = []
+    zeros = []
 
-    pass
+    for i in arr:
+        if i == 0:
+            zeros.append(i)
+        else:
+            non_zeros.append(i)
+
+    return non_zeros + zeros
 
 
 if __name__ == '__main__':
